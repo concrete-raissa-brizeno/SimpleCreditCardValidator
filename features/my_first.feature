@@ -3,6 +3,6 @@ Feature: Credit card validation.
 
   Scenario: Credit card number is too long
     Given I wait for the "MainActivity" screen to appear
-    When I enter "9999999999" into input field number 1
+    When I enter "9999999999999999" into input field number 1
     And I press "validateButton"
     Then I should see "Credit card number is too long."
